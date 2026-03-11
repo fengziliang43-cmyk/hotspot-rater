@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 245, 245, 245;
+  }
+}
+
+@layer components {
+  .score-badge-high {
+    @apply bg-gradient-to-r from-red-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold;
+  }
+  
+  .score-badge-medium {
+    @apply bg-gradient-to-r from-orange-400 to-yellow-500 text-white px-3 py-1 rounded-full text-sm font-bold;
+  }
+  
+  .score-badge-low {
+    @apply bg-gradient-to-r from-blue-400 to-cyan-500 text-white px-3 py-1 rounded-full text-sm font-bold;
+  }
+  
+  .category-tab {
+    @apply px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap;
+  }
+  
+  .category-tab-active {
+    @apply bg-blue-600 text-white;
+  }
+  
+  .category-tab-inactive {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+  }
+  
+  .hero-card {
+    @apply rounded-2xl shadow-xl overflow-hidden transition-all duration-300;
+  }
+  
+  .trend-card {
+    @apply bg-white rounded-xl shadow-sm p-4 mb-3 hover:shadow-md transition-all duration-200 border border-gray-100;
+  }
+  
+  .keyword-tag {
+    @apply bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs mr-2 mb-1;
+  }
+  
+  .countdown-display {
+    @apply text-2xl font-bold text-blue-600 mx-2;
+  }
+}
