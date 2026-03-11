@@ -1,0 +1,20 @@
+{
+  "name": "hotspot-rater",
+  "version": "1.0.0",
+  "description": "Daily hot topics aggregator with AI scoring",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "dayjs": "^1.11.10"
+  },
+  "license": "MIT"
+}
